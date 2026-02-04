@@ -23,7 +23,7 @@ async function checkWeather(city) {
 
     const data = await response.json();
 
-    // Updating UI inside the success block
+    // Updating UI inside the Success block
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML =
       Math.round(data.main.temp) + "°C";
