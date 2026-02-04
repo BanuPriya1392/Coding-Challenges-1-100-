@@ -1,0 +1,107 @@
+/* Unique Multi-Color Aurora Background */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  /* Sunset Coral to Sage Green Gradient */
+  background: linear-gradient(
+    135deg,
+    #ee9ca7 0%,
+    #ffdde1 30%,
+    #f7bb97 60%,
+    #adcebe 100%
+  );
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #334155; /* Slate Gray for better legibility on light colors */
+}
+
+/* Glassmorphism Card with Inner Glow */
+.weather-card {
+  background: rgba(255, 255, 255, 0.4); /* Higher transparency */
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 40px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated Search Bar to match theme */
+.search-container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px; /* Fully rounded */
+  padding: 8px 18px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.search-container:focus-within {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  color: #334155;
+  padding: 5px;
+  width: 100%;
+  outline: none;
+  font-weight: 500;
+}
+
+.search-btn {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Main Weather Text */
+.temp-text {
+  font-size: 5.5rem;
+  font-weight: 200; /* Thin font for a modern look */
+  margin: 10px 0;
+  color: #1e293b;
+  letter-spacing: -2px;
+}
+
+.condition-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+/* Stats Grid Styling */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  gap: 20px;
+}
+
+.stat-item p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.stat-item strong {
+  font-size: 1.1rem;
+  color: #334155;
+}
