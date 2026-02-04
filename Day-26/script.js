@@ -16,7 +16,7 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
 function updateImage() {
-  // Add a slight fade effect class
+  // Add a slight fade Effect class
   imgElement.classList.remove("fade-in");
   void imgElement.offsetWidth; // Trigger reflow
   imgElement.src = images[currentIndex];
