@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -194,7 +194,9 @@
         background: rgba(0, 0, 0, 0.5);
         opacity: 0;
         visibility: hidden;
-        transition: opacity 0.3s, visibility 0.3s;
+        transition:
+          opacity 0.3s,
+          visibility 0.3s;
         z-index: 999;
       }
 
@@ -364,7 +366,7 @@
           // Event listeners
           this.menuToggle.addEventListener("click", () => this.openDrawer());
           this.closeDrawer.addEventListener("click", () =>
-            this.closeDrawerFn()
+            this.closeDrawerFn(),
           );
           this.overlay.addEventListener("click", () => this.closeDrawerFn());
 
@@ -461,7 +463,7 @@
         }
       }
 
-      // Initialize the navigation drawer when the page loads
+      // Initialize the Navigation drawer when the page loads
       document.addEventListener("DOMContentLoaded", () => {
         new NavigationDrawer();
       });
